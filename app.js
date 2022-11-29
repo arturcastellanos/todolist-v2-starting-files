@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/todolistDB")
+mongoose.connect("mongodb+srv://arturcastellanos:covbes-gohrAx-dydxe8@cluster0.s7lsist.mongodb.net/?retryWrites=true&w=majority")
 
 const item1 = new Item({
   name: "Welcome to your todolist!"
